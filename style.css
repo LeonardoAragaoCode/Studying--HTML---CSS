@@ -1,13 +1,26 @@
 @charset "UTF-8";
 
+main {
+    background-color: whitesmoke;
+    width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    
+
+}
+
 body {
-    background-image: linear-gradient(to right, whitesmoke, #ADBABD, #91B7C7, #6EB4D1, #6CBEED);
+    background-image: linear-gradient(to right, whitesmoke, #ADBABD, #91B7C7);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;     
 }
 
 h1 {
     color: #0C0A3E;
-    background-color: #918EF4
+    background-color: #918EF4;
+    text-align: center;
+    box-shadow: 5px 5px 8px #918ef496;
+    text-shadow: 1px 1px 2px #0c0a3ea8;
 }
 
 h2 {
@@ -17,7 +30,6 @@ h2 {
 p {
     color: #0C0A3E;
     text-align: justify;
-    margin-right: 50%;
 }
 
 li {
