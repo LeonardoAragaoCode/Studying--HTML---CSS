@@ -7,41 +7,84 @@
     <title>Fontes</title>
     <style>
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            /* -Lembrando que a ordem decide na hora de escolha do navegador.*/
+    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+    /*importando fontes do fonts.google.com */
+    @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+    
+    @font-face {  /*É para usar fontes externas (downloads)*/
+        font-family: 'gotica'; /* Eu posso escolher o nome que eu quiser*/
+        src: url('downloaded-fonts/OldLondon.ttf') format('truetype'), url('downloaded-fonts/OldLondonAlternate.ttf') format('truetype'), url('downloaded-fonts/Olondon_.otf') format('opentype'), url('downloaded-fonts/Olondona.otf') format('opentype');
+        /* Tipos de format()
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-aat (Apple Advanced Typography)
+        - SVG 
+        */
+    }
 
-            font-size: 1em;
-            /* -Usar a forma de medida "em" para o tamanho das fontes (recomendado pelo W3C).*/
-            /*size=tamanho*/
-            
-            font-weight: 100;
-            /*Pode-se digitar de 100 até 900 ou lighter, normal, bold, bolder*/
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        /* -Lembrando que a ordem decide na hora de escolha do navegador.*/
 
-            font-style: italic;
+        font-size: 1em;
+        /* -Usar a forma de medida "em" para o tamanho das fontes (recomendado pelo W3C).*/
+        /*size=tamanho*/
+        
+        font-weight: 100;
+        /*Pode-se digitar de 100 até 900 ou lighter, normal, bold, bolder*/
 
-            text-decoration: underline; 
-        }
-        h1 {
-            font: italic bolder 3em Arial, sans-serif;
-            /* Shorthand font é um meio de resumi várias linhas em uma só.*/
-            /* font-style --> font-weight --> font-size --> font-family*/
-        }
+        font-style: normal;
+        /*normal, italic...*/
+
+        text-decoration: normal;
+        /* normal, underline ...*/ 
+    }
+    
+    h1 {
+        font: italic bolder 3em 'gotica', sans-serif;
+        /* Shorthand font é um meio de resumir várias linhas em uma só.*/
+        /* Deve se seguir a ordem: font-style --> font-weight --> font-size --> font-family*/
+    }
+
+    h2 {
+        font-family: 'Anton';
+        text-decoration: underline;
+    }
+
+    h3 {
+        font-style: italic;
+    }
+
+    h4 {
+        font-family: 'Kalam', cursive;
+    }
+    p {
+        font-size: 1.2em;
+    }
+    
     </Style>
 </head>
 <body>
     
     <h1>Estudando sobre o assunto fontes</h1>
     
-    <h2> Título 1</h2>
+    <h2> Lorem </h2>
     <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis odit qui, accusamus doloribus minima magni accusantium sapiente neque quibusdam modi adipisci cupiditate non commodi consequatur mollitia eum error, exercitationem dolores.</p>
     
-    <h2> Título 2</h2>
+    <h2> Lorem</h2>
     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolores, maxime distinctio tenetur esse magnam neque voluptatibus iure facere omnis laudantium maiores expedita perspiciatis 
     illo in minus quidem asperiores mollitia?</p>
 
-    <h2> Título 3</h2>
+    <h2> Lorem</h2>
+    <h3> Lorem</h3>
     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum modi eveniet nobis adipisci in, ex tenetur suscipit reiciendis tempore deleniti optio, earum sit dicta veritatis enim sequi? Molestiae, nostrum.</p>
+    <h3> Lorem </h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat in assumenda beatae expedita ab vitae, molestiae corporis ipsum soluta consequuntur suscipit illum illo dolorem possimus exercitationem asperiores, sit provident adipisci.</p>
+
+    <h4>Leonardo Aragão</h4>
+
+    
 
 </body>
 </html>
