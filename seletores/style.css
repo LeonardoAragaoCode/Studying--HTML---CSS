@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(70, 70, 70)
+}
+
+h1#principal { /*Pode colocar h1#principal ou #principal*/
+    font-family: 'Times New Roman', Times, serif;
+    color: aquamarine;
+    background-color: rgb(59, 59, 59);
+    text-align: center;
+    font-size: 2em;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    font-size: 1.5em;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color:violet;
+    font-size: 1.2em;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    text-indent: 1em;
+    text-align: justify;
+    width: 800px;
+}
+
+.basico {  /*Quando for colocar as class, deve-se colocar somente .(class)*/
+    color: rgb(88, 220, 238);
+}
+
+.intermediario {
+    color:rgb(238, 155, 88);
+}
+
+.avancado{
+    color:rgb(238, 88, 88)
+}
+
+.destaque {
+    background-color: rgb(173, 123, 214);
+}
