@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Estudando links com seletores personalizados</title>
+
+    <Style>
+       
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color:rgb(79, 109, 243);
+            text-decoration: none;
+        }
+        
+        a:visited { /* "Visited" sites que eu já entrei*/
+            color: rgb(108, 126, 206);
+
+        }
+
+        a:hover {
+            color: rgb(2, 0, 148);
+            text-decoration: underline;
+        }
+
+        /* o "::" significa que estou usando um Pseudo-elemento.*/
+        a::after {  /*after é o que vai aparecer depois do link*/
+            content: ' [link]';
+        }
+    </Style>
+</head>
+<body>
+    
+    <h1>Personalizando Links</h1>
+    
+    <ul>
+        
+        <li><a href="https://github.com/LeonardoAragaoCode?tab=repositories" target="_blank">Repositório GitHub</a></li></a>
+        
+        <li><a href="https://twitter.com/leoaragaods" target="_blank">Twitter</a></li>
+        
+       <li><a href="https://www.linkedin.com/in/leonardo-arag%C3%A3o-da-silva-445715213/" target="_blank">LinkedIn</a></li>
+        </a>
+    </ul>
+    
+</body>
+</html>
