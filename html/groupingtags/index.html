@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title> Grouping Tags HTML5</title>
+
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
+       
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #353D40;
+        }
+
+        header {
+            background-color: #003F63;
+            border-radius: 25px;
+            height: 165px;
+        }
+
+        header > h1 {
+            color: #F2B138;
+            font-family: 'Righteous', cursive;
+            font-size: 4em;
+            padding-top: 10px;
+            padding-left: 15px;
+            margin-top: 15px;
+        }
+
+        header > nav > a {
+            color: #e6bb6d;
+            font-size: 1.3em;
+            padding-left: 15px;
+            margin-right: 30px;
+        }
+
+        main {
+            background-color: #A1A5A6;  
+            border-radius: 8px;
+            margin: 5px;
+            height: 550px;
+
+        }
+     
+        main > section#assuntos {
+            color: white;
+            font-family: 'Inconsolata', monospace;
+            font-weight: 600;  
+            padding-left: 10px;
+            padding-top: 1px;
+        }
+
+        main > section#texto {
+            background-color: whitesmoke;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px;
+            
+        }
+
+        /*Sempre prestar bastante atenção no caminho até onde você quer chegar*/
+        main > section#texto > article > p { 
+            text-indent: 15px;
+            text-align: justify;
+        }
+
+        main > section#texto > aside {
+            color: rgb(53, 53, 53);
+            font-style: italic;
+        }
+
+        footer {
+            background-color: black;
+            color: rgb(106, 158, 255);
+            text-align: center;
+            width: 329px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+   <!--Não é necessário ser nessa ordem. Este é apenas um exemplo de uma estrutura-->
+   
+   <header>
+        <h1> Calistenia Brasil</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Treinos</a>
+            <a href="#">Alimentação</a>
+            <a href="#">Psicologia</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <p>CALISTENIA</p>
+        </section>
+        <section id="texto">
+            <article>
+                <h2> Calistenia é o melhor para você?</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam animi explicabo illo consequuntur, nulla tempora delectus, veniam, accusantium voluptatem ipsum id! Porro sunt possimus vel velit culpa modi perferendis sit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste recusandae officiis natus nesciunt quam tenetur aliquid ducimus blanditiis consequatur ipsa. Atque veniam et quaerat ipsum iste possimus dicta placeat eum?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis iusto, ullam porro nisi odit delectus nulla, quidem culpa ducimus rerum optio modi consectetur a eius, quas debitis! Autem, reprehenderit animi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quasi architecto et dolores natus quam perspiciatis unde dolor qui reprehenderit minus, facere assumenda quo quos, repellat, aliquam vitae in ipsa!</p>
+            </article>
+            <aside> 
+                Escrito por Leonardo Aragão
+            </aside>
+        </section>
+    </main>
+   
+    <footer>
+        <p>Desenvolvido por AragaoWebDeveloper</p>
+    </footer>
+    
+</body>
+</html>
