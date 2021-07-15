@@ -16,6 +16,12 @@
             display: inline;
             margin-right: 2px;
         }
+        select {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        
     </style>
 
 </head>
@@ -24,31 +30,46 @@
     
     <h2>Montando um:</h2>
     
-    <form>
-        <input type="text" name="nome">
-        <input type="password" name="senha">
-        <textarea name="bio" cols="30" rows="10"></textarea> 
+    <form> <!-- Tag para formulários-->
+        <input type="text" name="nome"> <!--Campo para inserir do type text-->
+        <input type="password" name="senha"> <!-- Campo para inserir senha-->
+        <textarea name="bio" cols="30" rows="10"></textarea> <!-- Espaço para digitar algum texto-->
+    
+        <div>
+            <input type="radio" name="tipo"> low <!-- Type "radio" é a bolinha de marcação-->
+            <input type="radio" name="tipo"> medium
+            <input type="radio" name="tipo"> high
+        </div>
+
+        <div>
+            <input type="checkbox" name="happy"> happy <!-- checkbox é para caixinhas de estilos de tarefas-->
+            <input type="checkbox" name="bad"> bad
+        </div>
+
+        <select name="estado"> <!-- Lista para selecionar a opção-->
+            <option value="##">Selecione</option> 
+            <option value="##">RJ</option>
+            <option value="##">SP</option>
+            <option value="##">MG</option>
+            <option value="##">ES</option>
+            <option value="##">outros</option>
+        </select>
+
+        <select name="redes" multiple size="4"> <!-- multiple size para possibilitar marcas várias opções ao mesmo tempo-->
+            <option value="##">Facebook</option>
+            <option value="##">Twitter</option>
+            <option value="##">LinkedIn</option>
+            <option value="##">Github</option>
+        </select>
+        
+
+        <button>Incluir</button> 
+        <button>Alterar</button>
+
     </form>
 
-    <div>
-        <input type="radio" name="tipo"> low
-        <input type="radio" name="tipo"> medium
-        <input type="radio" name="tipo"> high
-    </div>
 
-    <div>
-        <input type="checkbox" name="happy"> happy
-        <input type="checkbox" name="bad"> bad
-    </div>
 
-    <select name="estado">
-        <option value="##">Selecione</option>
-        <option value="##">RJ</option>
-        <option value="##">SP</option>
-        <option value="##">MG</option>
-        <option value="##">ES</option>
-        <option value="##">outros</option>
-    </select>
 
 </body>
 </html>
