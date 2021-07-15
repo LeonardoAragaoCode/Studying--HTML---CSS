@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title> Formulários </title>
+
+    <style>
+        input, textarea {
+            display: block;
+            margin: 10px;
+        }
+        div input {
+            display: inline;
+            margin-right: 2px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Aprendendo um pouco sobre formulários </h1>
+    
+    <h2>Montando um:</h2>
+    
+    <form>
+        <input type="text" name="nome">
+        <input type="password" name="senha">
+        <textarea name="bio" cols="30" rows="10"></textarea> 
+    </form>
+
+    <div>
+        <input type="radio" name="tipo"> low
+        <input type="radio" name="tipo"> medium
+        <input type="radio" name="tipo"> high
+    </div>
+
+    <div>
+        <input type="checkbox" name="happy"> happy
+        <input type="checkbox" name="bad"> bad
+    </div>
+
+    <select name="estado">
+        <option value="##">Selecione</option>
+        <option value="##">RJ</option>
+        <option value="##">SP</option>
+        <option value="##">MG</option>
+        <option value="##">ES</option>
+        <option value="##">outros</option>
+    </select>
+
+</body>
+</html>
