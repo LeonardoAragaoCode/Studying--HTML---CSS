@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/* Quando ocorrer problemas com as margin "entrando" uma dentro da outra, tente fazer essas alternativas:
+
+- float: left / right
+- position: absolute
+- display: inline-block 
+- ou então, exemplo: 1º elemento "margin-bottom:10px;" e 2º elemento "margin-top:0px;"

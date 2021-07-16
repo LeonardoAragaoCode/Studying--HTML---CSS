@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/* Especificidades CSS/*
+/* Qualquer coisa é so pesquisar calculadora de especificidade CSS/*
+/*Ordem:
+1- Inline
+2- ID
+3- Classe, Pseudo-Classe, atributo
+4- Elemento, Pseudo-Elemento
