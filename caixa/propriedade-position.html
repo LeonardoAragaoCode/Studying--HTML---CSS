@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title> Propriedade position</title>
+
+    <style>
+    
+        div{
+            border: 5px solid black;
+        }
+        div.static {
+            position: static; /* o valor "static" não respeita os posicionamentos top,right,bottom,left*/
+            top: 100px;
+            left: 50px;
+            background-color: darkseagreen;
+        }
+        div.fixed {
+            position: fixed; /* Ele tem a característica de literalmente fixar o box mesmo quando rolada a página.*/ 
+            top: 650px;
+            left: 350px;
+            background-color: darkorange;
+        }
+        div.relative {
+            position: relative;   /* Essa distância que ocorre do box relative é em relação ao box static.*/
+            top: 400px;
+            left: 50px;
+            background-color: darkslateblue;
+        }
+        div.absolute {            
+            position: absolute; /* O valor absolute já não respeita nada, ou seja, ele é faz como parâmetro a distância do topo da página. Ele ignora as outras box.*/
+            top: 1000px; 
+            
+        }   
+        div.relative2 {
+        
+        }
+        div.absolute2 {
+        
+        }
+        div.sticky {
+        
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade position</h1>
+    
+    <div class="static">
+        <h2>static</h2>
+    </div>
+    <div class="fixed">
+        <h2>fixed</h2>
+    </div>
+    <div class="relative">
+        <h2>relative</h2>
+    </div>
+    <div class="absolute">
+        <h2>absolute</h2>
+    </div>
+    <div class="relative02">
+        <div class="absolute02">
+
+        </div>
+    </div>
+    <div class="sticky">
+        <h2>sticky</h2>
+    </div> 
+    <p style="padding-bottom: 2000px;"> testando</p>
+
+</body>
+</html>
