@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Tamanho da box</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        div.ex1 {
+            background-color: black;
+            color: cornflowerblue;
+            font-size: 1em;
+            
+            width: 100%;
+            height: 200px;
+            padding-left: 100px;
+            border: 20px solid violet;
+
+            /* Atenção aqui porque o width está relacionado com o conteúdo. Aí, na hora de tamanho, ocorre a soma do tamanho do contéudo + padding + border = o que acaba gerando essa barra de movimentação lateral */
+        }
+
+        div.ex2 {
+            background-color: black;
+            background-color: coral;
+            font-size: 1em;
+            
+            width: 100%;
+            height: 200px;
+            padding-left: 100px;
+            border: 20px solid violet;
+            box-sizing: border-box; /* Observar que essa propriedade com esse valor "border-box" faz com que a largura (width) considere a borda como referência */
+        }
+    </style>
+</head>
+<body>
+   
+    <h1> Tamanho da box - box-sizing</h1>
+    
+    <div class="ex1">
+        <h2>Exemplo 1</h2>
+    </div>
+    
+    <div class="ex2">
+        <h2>Exemplo 2</h2>
+    </div>
+
+</body>
+</html>
