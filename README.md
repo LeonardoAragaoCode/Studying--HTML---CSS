@@ -1,2 +1,2 @@
 # Studying-HTML-CSS
-Exercícios e desafios com essas tecnologias: HTML E CSS.
+Algumas anotações, rascunhos etc. Relacionado à JS
